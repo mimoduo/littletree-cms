@@ -1,0 +1,33 @@
+{
+  "name": "littletree-cms",
+  "version": "1.0.0",
+  "description": "BigTree but little",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimoduo/littletree-cms.git"
+  },
+  "keywords": [
+    "node",
+    "cms"
+  ],
+  "author": "mimoduo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimoduo/littletree-cms/issues"
+  },
+  "homepage": "https://github.com/mimoduo/littletree-cms#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~4.0.1",
+    "express": "~4.16.3",
+    "http-errors": "~1.7.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^1.18.4",
+    "pug": "2.0.3"
+  }
+}
