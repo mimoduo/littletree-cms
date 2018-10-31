@@ -7,14 +7,19 @@ block content
 	)
 		.field
 			label(for="username") Create a desired username
-			input(
+			input#username(
+				required
+				name="username"
 				type="text"
 				placeholder="New username"
+				value=username ? username : ""
 			)
 		.field
 			label(for="password") Create a secure password
-			input(
-				type="text"
+			input#password(
+				required
+				name="password"
+				type="password"
 				placeholder="New password"
 			)
 		.field
@@ -22,3 +27,12 @@ block content
 				type="submit"
 				value="Create yourself anew"
 			)
+	if errors
+		- console.log(errors);
+		ul.errors
+			each error in errors
+				li.error= error.msg
+	if users
+		ul.users
+			each user in users
+				li.user= user

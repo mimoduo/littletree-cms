@@ -11,7 +11,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-mongoose.connect("mongodb://localhost:27017", { 
+mongoose.connect("mongodb://localhost:27017", {
+  useCreateIndex: true,
   useNewUrlParser: true 
 });
 mongoose.Promise = global.Promise;
